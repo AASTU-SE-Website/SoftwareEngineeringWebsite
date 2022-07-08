@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="frontend/signIn.css">
+</head>
+<body>
+    <div class="navigation">
+        <img class="logo" src="/HomePage-main/resources/aastu sw.png" alt="AASTU SE Logo" width="100">
+        <div class="navlink"><a href="/HomePage-main/index.html">Home</a></div>
+        <div class="navlink"><a href="/about.html">About us</a></div>
+        <div class="navlink"><a href="/course.html">Courses</a></div>
+        <div class="navlink"><a href="/events.html">Events<a></a></div>
+        <div class="navlink"><a href="/FAQPage-main/src/pages/faq.html">Q&A</a></div>
+        <div class="navlink"><a href="/contact.html">Contact</a></div>
+    </div>
+
+    <div class="signIn">
+        <div class="heroImage">
+            <img src="assets/peopleDiscussing.jpg" alt="students discussing">
+        </div>
+        <div class="signInSection">
+            <form action="#" method="post">
+                <div class="form signInTitle fontSubHeader">Sign In and Connect to AASTU</div>
+                <div class="form email"><input id="email" type="email" placeholder="E-mail" /></div>
+                <div class="form password"><input id="password" type="password" placeholder="Password" /></div>
+
+                <div class="form showPass">
+                    <input type="checkbox" name="showPassword" id="showPassword">
+                    <label for="showPassword">Show password</label>
+                </div>
+                
+                <div class="form selectOccupation">
+                    <select name="occupation" id="occupation">
+                        <option value="Student">Student</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                </div>
+                <div class="form btnSignIn">
+                    <button id="btnSubmit" class="form btn btnPrimary btnBlock" type="submit">SIGN IN</button>
+                </div>
+
+                <p class="fontPrimary form lnkSignUp">
+                    Don't have an account? <a href="signUp.html">Sign up.</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+  
+</body>
+</html>

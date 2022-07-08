@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../resources/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../resources/fonts/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../resources/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Hudson";
+    src: url("./resources/Hudson\ NY\ [TheFontsMaster.com].otf");
+    format('opentype');
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements */
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* Utility Classes */
+
+.accented {
+    color: var(--secondary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.wFull {
+    width: 100%;
+}
+
+.p_0 {
+    padding: 0;
+}
+
+.m_0 {
+    margin: 0;
+}
+
+.shrink_0 {
+    flex-shrink: 0;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 0.5rem);
+}
+
+.flexCol {
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.gap_1 {
+    --gap: 0.25rem;
+}
+
+.gap_2 {
+    --gap: 0.5rem;
+}
+
+.gap_3 {
+    --gap: 0.75rem;
+}
+
+.gap_4 {
+    --gap: 1rem;
+}
+
+.itemsCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+
+.bgGrey {
+    background-color: var(--greyColor);
+}
+
+.textGrey {
+    color: var(--greyColor);
+}
+
+.bgBlack {
+    background-color: var(--blackColor);
+}
+
+.textBlack {
+    color: var(--blackColor);
+}
+
+.textWhite {
+    color: #fff;
+}
+
+.textPrimary {
+    color: var(--primary-color);
+}
+
+.textSecondary {
+    color: var(--secondary-color);
+}
+
+.transition {
+    transition: 400ms ease;
+}
